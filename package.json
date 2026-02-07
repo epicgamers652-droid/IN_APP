@@ -6,7 +6,7 @@
     "dev": "concurrently \"npm run next:dev\" \"npm run convex:dev\" --names \"next,convex\" --prefix-colors \"cyan,magenta\"",
     "next:dev": "next dev",
     "convex:dev": "npx convex dev",
-    "build": "next build",
+    "build": "npx convex codegen && next build",
     "start": "next start",
     "lint": "eslint"
   },
